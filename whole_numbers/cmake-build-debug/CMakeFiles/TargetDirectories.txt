@@ -1,0 +1,3 @@
+C:/Users/User/CLionProjects/whole_numbers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/User/CLionProjects/whole_numbers/cmake-build-debug/CMakeFiles/whole_numbers.dir
+C:/Users/User/CLionProjects/whole_numbers/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/User/CLionProjects/digital_sort/main.c++
+vector
+-
+array
+-
+string
+-
+edx-io.hpp
+C:/Users/User/CLionProjects/digital_sort/edx-io.hpp
+

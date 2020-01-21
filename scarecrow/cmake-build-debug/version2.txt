@@ -1,0 +1,45 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int n;
+
+bool check(int *mas) {
+    for (int i = 1; i < n; i++) {
+        if (mas[i] < mas[i-1]) return false;
+    }
+    return true;
+}
+
+int main() {
+    int k;
+    ifstream in("input.txt");
+    in >> n >> k;
+    int *mas = new int[n];
+    for (int i = 0; i < n; i++)
+        in >> mas[i];
+    in.close();
+
+    ofstream out("output.txt");
+    if (k == 1) {
+        out << "YES";
+        return 0;
+    }
+
+    bool next;
+
+    do {
+        next = false;
+        for (int i = 0; i < n-k; i++) {
+            if (mas[i] > mas[i+k]) {
+                swap(mas[i], mas[i+k]);
+                next = true;
+            }
+        }
+    } while (next);
+
+    out << (check(mas) ? "YES" : "NO");
+
+    return 0;
+}

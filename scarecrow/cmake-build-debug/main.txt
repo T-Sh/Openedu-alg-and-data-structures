@@ -1,0 +1,66 @@
+for (int i = k; i < n; i++) {
+        /*int j = i-k;
+        while (j >= 0 && mas[i] < mas[j]) {
+            swap(mas[i], mas[j]);
+            j = j-k;
+            for (int m = 0; m < n; m++)
+                cout << mas[m] << " ";
+            cout << "\n";
+        }
+        int j = i % k;
+        while (j < i && mas[j] < mas[i]) {
+            j += k;
+        }
+        swap(mas[i], mas[j]);*/
+
+        /*for (int j = i % k; j < i; j += k) {
+            if (mas[j] < mas[i])
+                swap(mas[i], mas[j]);
+
+        cout << j << " " << i << "\n";
+        for (int m = 0; m < n; m++)
+            cout << mas[m] << " ";
+        cout << "\n";
+        }*/
+
+        int j = i % k;
+
+        while (j < i && mas[i] < mas[j]) {
+            swap(mas[i], mas[j]);
+            j += k;
+            cout << j << "\n";
+            for (int m = 0; m < n; m++)
+                cout << mas[m] << " ";
+            cout << "\n";
+        }
+
+// Рабочее решение
+        /*for (int j = i % k; j < i; j = j + k) {
+            if (mas[i] < mas[j]) {
+                swap(mas[i], mas[j]);
+            }
+            for (int m = 0; m < n; m++)
+                cout << mas[m] << " ";
+            cout << "\n";
+        }*/
+    }
+
+    //quick_sort(mas, 0, n-1, k);
+
+    int i = 1;
+    while (i < n && mas[i] >= mas[i-1]) {
+        i++;
+        //cout << i << "\n";
+    }
+
+    /*for (int m = 0; m < n; m++)
+        cout << mas[m] << " ";
+    cout << "\n";*/
+
+
+    //cout << i << " " << n;
+    if (i == n) {
+        out << "YES";
+    } else {
+        out << "NO";
+    }

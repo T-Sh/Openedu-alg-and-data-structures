@@ -1,0 +1,3 @@
+C:/Users/User/CLionProjects/postfix/cmake-build-debug/CMakeFiles/postfix.dir
+C:/Users/User/CLionProjects/postfix/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/User/CLionProjects/postfix/cmake-build-debug/CMakeFiles/rebuild_cache.dir

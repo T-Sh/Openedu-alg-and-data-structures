@@ -1,0 +1,6 @@
+C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\183.5429.37\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\User\CLionProjects\untitled
+CMake Error at CMakeLists.txt:1:
+  Parse error.  Expected a newline, got identifier with text "project".
+
+
+-- Configuring incomplete, errors occurred!
